@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "84a29277-37a2-4247-b263-3c5571ff58df",
+    "Name": "UsrYachat",
+    "Type": 1,
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/UsrYachat.csproj",
+    "DependsOn": []
+  }
+}

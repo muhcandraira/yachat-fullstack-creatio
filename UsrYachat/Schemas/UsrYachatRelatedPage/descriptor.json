@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "92d512b3-cd2e-4768-a9da-c4231ae0e81b",
+    "Name": "UsrYachatRelatedPage",
+    "ModifiedOnUtc": "\/Date(1758194729000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Yachat (Page settings)",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8c07394b-535c-4854-8c1e-d4c969d8be21",
+    "Name": "UsrYachat_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1758792815000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Yachat form page (Business rules)",
+    "DependsOn": []
+  }
+}

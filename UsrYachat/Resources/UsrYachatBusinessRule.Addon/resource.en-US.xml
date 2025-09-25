@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.2317ad5a-8f3e-9fce-232e-7d9088739d91.Caption" Value="Apply filter: City" />
+			<Item Name="AddonConfig.Rules.5c941ab9-33e5-243a-7c98-5e87f613b127.Caption" Value="ChildRule-2317ad5a-8f3e-9fce-232e-7d9088739d91-PopulateValue" />
+			<Item Name="AddonConfig.Rules.bb138df0-00b5-84c4-6e84-27a7d9ea43fc.Caption" Value="ChildRule-2317ad5a-8f3e-9fce-232e-7d9088739d91-ClearValue" />
+			<Item Name="AddonConfig.Rules.e07ddcd0-8e89-cb43-66ce-1459bb77959b.Caption" Value="Apply static filter: Manager" />
+			<Item Name="Caption" Value="Yachat (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

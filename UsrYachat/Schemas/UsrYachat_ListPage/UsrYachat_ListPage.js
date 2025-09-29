@@ -17,7 +17,6 @@ define("UsrYachat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				"operation": "merge",
 				"name": "FolderTree",
 				"values": {
-					"sourceSchemaName": "FolderTree",
 					"rootSchemaName": "UsrYachat"
 				}
 			},
@@ -33,18 +32,50 @@ define("UsrYachat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"dataValueType": 1
 						},
 						{
-							"id": "c8689d78-80ba-4e71-8cf2-fa478e3be5bc",
-							"code": "PDS_CreatedOn",
-							"caption": "#ResourceString(PDS_CreatedOn)#",
-							"dataValueType": 7
+							"id": "084b44d4-2f8c-10eb-42e4-6f6627249935",
+							"code": "PDS_UsrPrice",
+							"caption": "#ResourceString(PDS_UsrPrice)#",
+							"dataValueType": 32
 						},
 						{
-							"id": "fd4b3485-a46e-4219-b775-adef1210fe51",
-							"code": "PDS_CreatedBy",
-							"caption": "#ResourceString(PDS_CreatedBy)#",
+							"id": "00b0aeeb-d62c-528a-6f3e-3015bbc6663b",
+							"code": "PDS_UsrStatus",
+							"caption": "#ResourceString(PDS_UsrStatus)#",
 							"dataValueType": 10
 						},
-					]
+						{
+							"id": "d76181ba-6866-3e55-6c59-55ae685fb047",
+							"code": "PDS_UsrDriveType",
+							"caption": "#ResourceString(PDS_UsrDriveType)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "5cd9c833-bf0e-6f22-6d9e-736fa037d1f5",
+							"code": "PDS_UsrPassengersNumber",
+							"caption": "#ResourceString(PDS_UsrPassengersNumber)#",
+							"dataValueType": 4
+						},
+						{
+							"id": "51ef91c8-80f3-76bc-51be-f30430f14a54",
+							"code": "PDS_UsrTicketPrice",
+							"caption": "#ResourceString(PDS_UsrTicketPrice)#",
+							"dataValueType": 32
+						}
+					],
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"visible": true
 				}
 			},
 			{
@@ -79,16 +110,48 @@ define("UsrYachat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"path": "PDS.UsrName"
 						}
 					},
-					"PDS_CreatedOn": {
+					"PDS_UsrPrice": {
 						"modelConfig": {
-							"path": "PDS.CreatedOn"
+							"path": "PDS.UsrPrice"
 						}
 					},
-					"PDS_CreatedBy": {
+					"PDS_UsrStatus": {
 						"modelConfig": {
-							"path": "PDS.CreatedBy"
+							"path": "PDS.UsrStatus"
+						}
+					},
+					"PDS_UsrDriveType": {
+						"modelConfig": {
+							"path": "PDS.UsrDriveType"
+						}
+					},
+					"PDS_UsrPassengersNumber": {
+						"modelConfig": {
+							"path": "PDS.UsrPassengersNumber"
+						}
+					},
+					"PDS_UsrTicketPrice": {
+						"modelConfig": {
+							"path": "PDS.UsrTicketPrice"
 						}
 					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items",
+					"modelConfig",
+					"sortingConfig"
+				],
+				"values": {
+					"default": [
+						{
+							"direction": "asc",
+							"columnName": "CreatedOn"
+						}
+					]
 				}
 			}
 		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
@@ -101,7 +164,27 @@ define("UsrYachat_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"config"
 				],
 				"values": {
-					"entitySchemaName": "UsrYachat"
+					"entitySchemaName": "UsrYachat",
+					"attributes": {
+						"UsrName": {
+							"path": "UsrName"
+						},
+						"UsrPrice": {
+							"path": "UsrPrice"
+						},
+						"UsrStatus": {
+							"path": "UsrStatus"
+						},
+						"UsrDriveType": {
+							"path": "UsrDriveType"
+						},
+						"UsrPassengersNumber": {
+							"path": "UsrPassengersNumber"
+						},
+						"UsrTicketPrice": {
+							"path": "UsrTicketPrice"
+						}
+					}
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,

@@ -578,6 +578,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrYachat/UsrYachat.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrYachat/UsrYachat.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrYachatDriveType/UsrYachatDriveType.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrYachatDriveType/UsrYachatDriveType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrYachatRental/UsrYachatRental.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrYachatRental/UsrYachatRental.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrYachatStatus/UsrYachatStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrYachat/Schemas/UsrYachatStatus/UsrYachatStatus.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>

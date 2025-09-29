@@ -4,6 +4,7 @@
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachat/UsrYachat.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachat/UsrYachat.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachatDriveType/UsrYachatDriveType.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachatDriveType/UsrYachatDriveType.cs')" />
+		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachatRental/UsrYachatRental.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachatRental/UsrYachatRental.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachatStatus/UsrYachatStatus.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachatStatus/UsrYachatStatus.cs')" />
 	</ItemGroup>
 </Project>

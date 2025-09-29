@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "f7f4b33e-e87d-4aad-9454-c4751745b0ea",
+    "Name": "UsrYachatRentalFormPage",
+    "ModifiedOnUtc": "\/Date(1759135688000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Yachat rental form page"
+  }
+}

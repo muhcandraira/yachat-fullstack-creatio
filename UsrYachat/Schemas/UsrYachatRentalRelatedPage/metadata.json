@@ -1,0 +1,35 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "e9553fc1-8387-491f-bb5c-d28729145c0d",
+      "A2": "UsrYachatRentalRelatedPage",
+      "A5": "257e4ff2-f4e6-44f7-af46-3540f7f16511",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "84a29277-37a2-4247-b263-3c5571ff58df",
+      "B8": "8.3.0.3074",
+      "AD1": "a5eb8641-ca48-4aed-a2f3-23c150d2897c",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+  "Pages": [
+    {
+      "UId": "45cb9fe2-dda5-2db5-7669-2afd44dae315",
+      "PageSchemaUId": "f7f4b33e-e87d-4aad-9454-c4751745b0ea",
+      "IsDefault": true,
+      "IsSspDefault": false,
+      "Actions": {
+        "Add": false
+      },
+      "Role": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+      "TypeColumnValue": null
+    }
+  ],
+  "TypeColumnUId": null
+}
+    }
+  }
+}

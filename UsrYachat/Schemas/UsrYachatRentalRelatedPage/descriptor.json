@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "e9553fc1-8387-491f-bb5c-d28729145c0d",
+    "Name": "UsrYachatRentalRelatedPage",
+    "ModifiedOnUtc": "\/Date(1759135730000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Yachat Rental (Page settings)",
+    "DependsOn": []
+  }
+}

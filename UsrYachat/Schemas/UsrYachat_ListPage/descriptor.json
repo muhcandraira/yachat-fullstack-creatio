@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "4939a1ca-5ba2-47ce-ad81-c33a5999bc5d",
     "Name": "UsrYachat_ListPage",
-    "ModifiedOnUtc": "\/Date(1758194729000)\/",
+    "ModifiedOnUtc": "\/Date(1759134457000)\/",
     "Parent": {
       "UId": "b7b898d0-8c77-4953-c097-23fa6800da02",
       "Name": "ListPageV3Template"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Yachat list page",
-    "DependsOn": []
+    "Caption": "Yachat list page"
   }
 }

@@ -83,6 +83,7 @@
   "S4": "635465f5-b066-4ced-9cbc-8d725c8dbd5b",
   "E2": 1,
   "E6": true,
+  "E9": true,
   "E17": "UsrParentChatId",
   "E18": "UsrParentChatUsrName"
 }

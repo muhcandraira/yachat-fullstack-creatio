@@ -1,4 +1,4 @@
-define("UsrYachat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("UsrYachat_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -94,6 +94,64 @@ define("UsrYachat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "Button_g3sk6ic",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_g3sk6ic_caption)#",
+					"color": "default",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "actions-button-icon",
+					"menuItems": [],
+					"clickMode": "menu"
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "RunCalcAvgTicketPrice",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(RunCalcAvgTicketPrice_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrCalcAverageTicketPriceProcess",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "YachatIdParameter"
+						}
+					},
+					"icon": "calculator-icon"
+				},
+				"parentName": "Button_g3sk6ic",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "RunMaxPriceWebServiceMenuItem",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(RunMaxPriceWebServiceMenuItem_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "Usr.RunWebServiceRequest"
+					},
+					"icon": "rocket-icon"
+				},
+				"parentName": "Button_g3sk6ic",
+				"propertyName": "menuItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "Button_fky8s9s",
 				"values": {
 					"type": "crt.Button",
@@ -111,7 +169,7 @@ define("UsrYachat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "CardToggleContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -484,6 +542,25 @@ define("UsrYachat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "MultiSelect_Categories",
+				"values": {
+					"type": "crt.MultiSelect",
+					"label": "#ResourceString(MultiSelect_Categories_label)#",
+					"recordId": "$Id",
+					"recordRelationColumnName": "UsrParentYachat",
+					"selectSchemaName": "UsrYachatCategoryDetail",
+					"selectColumnName": "UsrCategory",
+					"visible": true,
+					"labelPosition": "auto",
+					"placeholder": "",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_t1y0rr7",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -508,7 +585,7 @@ define("UsrYachat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1037,7 +1114,47 @@ define("UsrYachat_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
         /* Call the next handler if it exists and return its result. */
         return next?.handle(request);
     }
+},
+			{
+    request: "Usr.RunWebServiceRequest",
+    /* Implementation of the custom query handler. */
+    handler: async (request, next) => {
+        console.log("Run web service button works...");
+
+        // get id from drive type lookup type object
+        var typeObject = await request.$context.PDS_UsrDriveType_12pml9r;
+        var driveTypeId = "";
+        if (typeObject) {
+            driveTypeId = typeObject.value;
+        }
+
+		 console.log(typeObject);
+        /* Create an instance of the HTTP client from @creatio-devkit/common. */
+        const httpClientService = new sdk.HttpClientService();
+
+        /* Specify the URL to run web service method. */
+        const baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+		
+        const transferName = "rest";
+        const serviceName = "YachatService";
+        const methodName = "GetMaxPriceByDriveTypeId";
+        const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+
+		 console.log(endpoint);
+        //const endpoint = "http://localhost/D1_Studio0/rest/YachtService/GetMaxPriceByDriveTypeId";
+        /* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
+        var params = {
+            driveTypeId: driveTypeId
+        };
+        const response = await httpClientService.post(endpoint, params);
+
+        console.log("response max price = " + response.body.GetMaxPriceByDriveTypeIdResult);
+
+        /* Call the next handler if it exists and return its result. */
+        return next?.handle(request);
+    }
 }
+
 
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,

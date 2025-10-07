@@ -1,8 +1,11 @@
 <Project>
 	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/UsrYachat/Schemas/Account/Account.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/Account/Account.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrTrafficLight/UsrTrafficLight.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrTrafficLight/UsrTrafficLight.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrVwContactAgeDays/UsrVwContactAgeDays.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachat/UsrYachat.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachat/UsrYachat.cs')" />
+		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachatCategory/UsrYachatCategory.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachatCategory/UsrYachatCategory.cs')" />
+		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachatCategoryDetail/UsrYachatCategoryDetail.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachatCategoryDetail/UsrYachatCategoryDetail.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachatDriveType/UsrYachatDriveType.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachatDriveType/UsrYachatDriveType.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachatRental/UsrYachatRental.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachatRental/UsrYachatRental.cs')" />
 		<Compile Include="$(PkgPath)/UsrYachat/Schemas/UsrYachatStatus/UsrYachatStatus.cs" Condition="Exists('$(PkgPath)/UsrYachat/Schemas/UsrYachatStatus/UsrYachatStatus.cs')" />

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "92a1fbf6-2308-4fb6-adeb-be83acacb727",
+    "Name": "UsrYachatCategoryDetail",
+    "ModifiedOnUtc": "\/Date(1759139179000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Yachat category detail",
+    "DependsOn": []
+  }
+}

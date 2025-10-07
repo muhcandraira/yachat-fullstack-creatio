@@ -10,6 +10,7 @@
 			<Item Name="LocalizableStrings.addRecord_ix49tkz_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_ssg21jn_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.Button_fky8s9s_caption.Value" Value="Push me!" />
+			<Item Name="LocalizableStrings.Button_g3sk6ic_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.CrewNumberCannotBeLess.Value" Value="Crew number cannot be less than 1" />
 			<Item Name="LocalizableStrings.ExpansionPanel_t1y0rr7_title.Value" Value="Yachat rental" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_l9e3g1z_caption.Value" Value="New" />
@@ -21,7 +22,10 @@
 			<Item Name="LocalizableStrings.LengthCannotBeLess.Value" Value="Length cannot be less than 3 m" />
 			<Item Name="LocalizableStrings.ManagerEmail_caption.Value" Value="Email address" />
 			<Item Name="LocalizableStrings.ManagerEmail_label.Value" Value="Manager Email" />
+			<Item Name="LocalizableStrings.MultiSelect_Categories_label.Value" Value="Categories" />
 			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 100 USD" />
+			<Item Name="LocalizableStrings.RunCalcAvgTicketPrice_caption.Value" Value="Run calc avg ticket price process" />
+			<Item Name="LocalizableStrings.RunMaxPriceWebServiceMenuItem_caption.Value" Value="Run max price web service" />
 			<Item Name="LocalizableStrings.UsrPassengersNumberCannotBeLess.Value" Value="Passengers number cannot be less 1" />
 		</Items>
 	</Group>

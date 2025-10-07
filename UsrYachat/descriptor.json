@@ -3,14 +3,21 @@
     "UId": "84a29277-37a2-4247-b263-3c5571ff58df",
     "Name": "UsrYachat",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1758039995000)\/",
+    "ModifiedOnUtc": "\/Date(1759141695000)\/",
     "Maintainer": "Customer",
     "ProjectPath": "Files/UsrYachat.csproj",
+    "Description": "demo package ",
     "DependsOn": [
       {
         "UId": "012e2e14-082b-ac2b-da5a-2fc87bad41d4",
         "PackageVersion": "7.8.0",
         "Name": "CrtCore",
+        "Type": 1
+      },
+      {
+        "UId": "2ecba2bd-b810-47a5-a1b1-08c888529d6c",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCustomer360App",
         "Type": 1
       }
     ]

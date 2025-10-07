@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f26fa8ad-013b-4190-b43a-3696924638b8",
+    "Name": "UsrProcess_0134344",
+    "ModifiedOnUtc": "\/Date(1759577756000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Auto add yachat rentals process",
+    "DependsOn": []
+  }
+}
